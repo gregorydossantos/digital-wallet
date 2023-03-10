@@ -41,7 +41,7 @@ public class Releases {
     private BigDecimal amount;
 
     @Column(nullable = false)
-    private Instant dateHour;
+    private Instant dateHour = Instant.now();
 
     @Column(nullable = false)
     private TypeTransfer typeTransfer;
